@@ -33,15 +33,15 @@ class Authorization:
 class BonusAndStocks:
     CSS_OPEN = '.ActionsTags__ActionsTagsItem-sc-1edm1fb-1.CkPrI'
 
-    @allure.step("Открываем раздел 'Акции и бонусы'")
+    @allure.step("Открываем раздел Акции и бонусы")
     def open_bonus(self):
         browser.element(by.text("Акции и бонусы")).click()
 
-    @allure.step("Открываем раздел 'Клуб'")
+    @allure.step("Открываем раздел Клуб")
     def open_club(self):
         browser.all(self.CSS_OPEN)[2].click()
 
-    @allure.step("Проверяем текст 'Приведи друга'")
+    @allure.step("Проверяем текст Приведи друга")
     def check_text_club(self):
         browser.element(by.text("Приведи друга")).should(have.text("Приведи друга"))
 
@@ -49,7 +49,7 @@ class BonusAndStocks:
     def open_status(self):
         browser.all(self.CSS_OPEN)[1].click()
 
-    @allure.step("Проверяем текст 'Boom Статус'")
+    @allure.step("Проверяем текст Boom Статус")
     def check_text_status(self):
         browser.element(by.text("Boom Статус")).should(have.text("Boom Статус"))
 
@@ -59,7 +59,7 @@ class Sport:
     CSS_OPEN_SPORT = '.Header__HeaderNavigation-sc-w4usz4-3.ehvUxm'
 
     @classmethod
-    @allure.step("Открываем раздел 'Киберспорт'")
+    @allure.step("Открываем раздел Киберспорт")
     def open_sports(cls):
         browser.element(cls.CSS_OPEN_SPORT).should(have.text('Киберспорт')).click()
 
