@@ -60,8 +60,9 @@ class BonusAndStocks:
 
 
 class Sport:
-    GAME_LIST_SELECTOR = '.swiper.swiper-module.swiper-initialized.swiper-horizontal.swiper-free-mode.Edqq1-98b74d03.swiper-backface-hidden'
+    GAME_LIST_SELECTOR = '.swiper.swiper-module.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden'
     CSS_OPEN_SPORT = '.Header__HeaderNavigation-sc-w4usz4-3.ehvUxm'
+
 
     @allure.step("Открываем главную страницу")
     def open(cls):
