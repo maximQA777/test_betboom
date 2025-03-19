@@ -32,7 +32,7 @@ def setup_browser(request):
     browser.config.driver_options = driver_options  # чтоб тест выполнялся когда сайт продолжается грузиться , но html загрузился
     browser.config.window_width = 1920
     browser.config.window_height = 1080
-    # driver_options = webdriver.ChromeOptions()   #настройка чтоб не открывать браузер , надо для этого 8 , 10 строчку кода
+    # driver_options = webdriver.ChromeOptions()   #настройка чтоб не открывать браузер
     # driver_options.add_argument('--headless')
 
     SELENOID_LOGIN = os.getenv("SELENOID_LOGIN")
@@ -42,7 +42,7 @@ def setup_browser(request):
     options = Options()
     selenoid_capabilities = {
         "browserName": "chrome",
-        "browserVersion": "125.0",
+        "browserVersion": "127.0",
         "selenoid:options": {
             "enableVNC": True,
             "enableVideo": True
