@@ -14,6 +14,7 @@ def test_auth():
 def test_bonus_stocks():
     bonus_stocks = BonusAndStocks()
 
+    bonus_stocks.open()
     bonus_stocks.open_bonus()
     bonus_stocks.open_club()
     bonus_stocks.check_text_club()
@@ -22,6 +23,7 @@ def test_bonus_stocks():
 
 def test_check_spotr():
     sport = Sport()
+    sport.open()
     sport.open_sports()
     sport.check_text_cs2()
     sport.check_text_dota2()

@@ -33,6 +33,11 @@ class Authorization:
 class BonusAndStocks:
     CSS_OPEN = '.ActionsTags__ActionsTagsItem-sc-1edm1fb-1.CkPrI'
 
+    @allure.step("Открываем главную страницу")
+    def open(cls):
+        browser.config.base_url = 'https://betboom.ru'
+        browser.open('/')
+
     @allure.step("Открываем раздел Акции и бонусы")
     def open_bonus(self):
         browser.element(by.text("Акции и бонусы")).click()
@@ -57,6 +62,11 @@ class BonusAndStocks:
 class Sport:
     GAME_LIST_SELECTOR = '.swiper.swiper-module.swiper-initialized.swiper-horizontal.swiper-free-mode.Edqq1-98b74d03.swiper-backface-hidden'
     CSS_OPEN_SPORT = '.Header__HeaderNavigation-sc-w4usz4-3.ehvUxm'
+
+    @allure.step("Открываем главную страницу")
+    def open(cls):
+        browser.config.base_url = 'https://betboom.ru'
+        browser.open('/')
 
     @classmethod
     @allure.step("Открываем раздел Киберспорт")
