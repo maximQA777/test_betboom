@@ -5,6 +5,7 @@ from page_object.page import Authorization, BonusAndStocks, Sport, Registration,
 def test_sport24():
     sport24_page = GameChecker()
     sport24_page.open()
+
     sport24_page.check_express37()
     sport24_page.check_express38()
     sport24_page.check_nard()
