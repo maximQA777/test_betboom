@@ -43,16 +43,16 @@ ___
 ## Пример отчёта в Allure
 
 ### Общий отчёт о пройденном тесте
-<img src="https://github.com/maximQA777/test_betboom/bloob/main/icons/Screenshot_31.png" width="630" height="320"/>
+<img src="https://github.com/maximQA777/test_betboom/blob/main/icons/Screenshot_31.png" width="630" height="320"/>
 
 ### Детальный отчёт о пройденном тесте
 
-<img src="https://github.com/maximQA777/test_betboom/bloob/main/icons/Screenshot_32.png" width="630" height="320"/>
+<img src="https://github.com/maximQA777/test_betboom/blob/main/icons/Screenshot_32.png" width="630" height="320"/>
 
 ### Видеопрохождение одного из теста
 
-<img src="https://github.com/maximQA777/test_betboom/bloob/main/icons/8dc7845fdebf344ca7b6d23570118e32.mp4" width="630" height="320"/>
+<img src="https://github.com/maximQA777/test_betboom/blob/main/icons/8dc7845fdebf344ca7b6d23570118e32.mp4" width="630" height="320"/>
 
 ### Отчёт о прохождении теста в Telegram
 
-<img src="https://github.com/maximQA777/test_betboom/bloob/main/icons/Screenshot_30.png" width="300" height="320"/>
+<img src="https://github.com/maximQA777/test_betboom/blob/main/icons/Screenshot_30.png" width="300" height="320"/>
