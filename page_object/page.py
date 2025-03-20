@@ -2,6 +2,39 @@ import allure
 from selene import browser, have, by
 from selene.support.conditions import be
 
+
+
+
+
+class GameChecker:
+
+    @classmethod
+    @allure.step("Открываем главную страницу")
+    def open(cls):
+        browser.config.base_url = 'https://betboom.ru'
+        browser.open('/')
+
+    GAME_SELECTOR = '[class="d3wu6-7de74f0b"]'
+
+    @allure.step("Проверяем текст в списке игр")
+    def check_text_in_game_list(self, text):
+        browser.element(self.GAME_SELECTOR).should(be.visible)
+        browser.element(self.GAME_SELECTOR).should(have.text(text))
+
+    @allure.step("Проверяем наличие игры Экспресс 37")
+    def check_express37(self):
+        self.check_text_in_game_list("Экспресс 37")
+
+    @allure.step("Проверяем наличие игры Экспресс 38")
+    def check_express38(self):
+        self.check_text_in_game_list("Экспресс 38")
+
+    @allure.step("Проверяем наличие игры Нарды")
+    def check_nard(self):
+        self.check_text_in_game_list("Нарды")
+
+
+
 class Authorization:
     CSS_OPEN_AUTH = '.Button-sc-zdin7l-0.Button__TransparentButton-sc-zdin7l-1'
 
@@ -28,6 +61,33 @@ class Authorization:
     def check_error_text(self):
         browser.element(by.text("Обязательное поле")).should(have.text("Обязательное поле"))
         browser.element(by.text("Минимум 8 символов")).should(have.text("Минимум 8 символов"))
+
+
+class Registration:
+    CSS_REGIS = '.Button-sc-zdin7l-0.Header__RegButton-sc-w4usz4-6.gdoIGv.iOdsks'
+
+    @classmethod
+    @allure.step("Открываем главную страницу")
+    def open(cls):
+        browser.config.base_url = 'https://betboom.ru'
+        browser.open('/')
+
+
+    @allure.step("Открываем форму регистрации")
+    def open_registration(self):
+        browser.all(self.CSS_REGIS)[0].click()
+
+    @allure.step("Проверяем текст Cбер ID")
+    def check_regist_sber(self):
+        browser.element(by.text("Сбер ID")).should(have.text("Сбер ID"))
+
+
+    @allure.step("Проверяем текст Т-Банк")
+    def check_regist_Tbank(self):
+        browser.element(by.text("Т-Банк")).should(have.text("Т-Банк"))
+
+
+
 
 
 class BonusAndStocks:
