@@ -51,7 +51,7 @@ ___
 
 ### Видеопрохождение одного из теста
 
-<img src="https://github.com/maximQA777/test_betboom/blob/main/icons/8dc7845fdebf344ca7b6d23570118e32.mp4" width="630" height="320"/>
+<img src="https://github.com/maximQA777/test_betboom/blob/main/icons/8dc7845fdebf344ca7b6d23570118e32.gif" width="630" height="320"/>
 
 ### Отчёт о прохождении теста в Telegram
 
