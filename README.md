@@ -111,4 +111,4 @@ ___
 
 ### Отчёт о прохождении теста в Telegram
 
-<img src="[https://github.com/Vyroum/Vyroum/blob/main/icons/Screenshot_2.png](https://prnt.sc/tVXanDVli-d8)" width="300" height="320"/>
+<img src="[https://github.com/maximQA777/test_betboom/tree/main/icons/Screenshot_30.png]" width="300" height="320"/>
